@@ -45,7 +45,33 @@ int main() {
     cout << x + y + z;
 
     int x = y = z = 50;
-    cout << x + y + z;
+    cout << x + y + z << "\n";
+
+    //indentifiers
+    // All C++ variables must be identified with unique names.
+    // These unique names are called identifiers.
+
+    int m = 60; // OK, but not so easy to understand what m actually is
+    int MinutesperHour = 60; // good
+
+    // Contants
+    // When you do not want others (or yourself) to change existing variable values, 
+    // use the const keyword (this will declare the variable as "constant", 
+    // which means unchangeable and read-only):
+
+    const int number = 93;
+
+    // ga bisa di buat terpisah dengan valuenya
+    // const int umur;
+    // umur = 19;
+
+    // Real Life Examples
+    const int studentID = 290261;
+    int studentAge = 19;
+    double studentFee = 70.56;
+    char studentGrade = 'A';
+
+    cout << "Saya Bintang dengan nim " << studentID << ", saya berumur " << studentAge << "Fee saya " << studentFee << "Nilai saya" << studentGrade; 
 
     return 0;
 }
