@@ -12,5 +12,10 @@ int main() {
     cout << "Sebelah gw gila" << "\t" << "gw gila" << endl;
     cout << "ini ada garis \\" << endl;
     cout << "teman pertama bintang namanya \"wawa\"";
+
+    //This is a comment
+    
+    /* This is a multi line comment
+    this can be use for long text */
     return 0;
 }
