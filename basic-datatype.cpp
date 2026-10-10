@@ -17,6 +17,17 @@ int main() {
     cout << f1;
     cout <<input2;
 
+    // Boolean Types
+    // When the value is returned, true = 1 and false = 0.
+
+    bool isCodingFun = true;
+    bool isFishTasty = false;
+    cout << isCodingFun; // Outputs 1
+    cout << isFishTasty; // Output 0
+
+
+    //Character Type
+
     return 0;
 
 }
