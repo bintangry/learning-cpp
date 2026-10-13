@@ -83,8 +83,28 @@ int main() {
     int y = 3;
     cout << (x > y); // returns 1 (true) because 5 is greater than 3
 
-    //list of 
+    //list of comparison operator
+    // ==, !=, >, <, >=, <=
 
+    //Real-Life Example
+
+    int age = 18;
+
+    cout << (age >= 18); // answer will be true
+    cout << (age > 18); // answer will be false
+
+    int passwordlength = 20;
+
+    cout << (passwordlength != 20); // answer will be false
+    cout << (passwordlength == 20); // answer will be true
+
+
+    //LOGICAL( used to determine the logic between variables or values)
+    // &&(Logical and/harus dua statement baru menciptakan 'true'), 
+    //||(Logical or/cukup salah satu statement antara 2 garis itu bakal ngasilin true), 
+    //!(Logical not/kembalikan dari hasil aslinya)
+
+    
 
     
     return 0;
