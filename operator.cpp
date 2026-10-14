@@ -98,14 +98,58 @@ int main() {
     cout << (passwordlength != 20); // answer will be false
     cout << (passwordlength == 20); // answer will be true
 
-
+    
     //LOGICAL( used to determine the logic between variables or values)
     // &&(Logical and/harus dua statement baru menciptakan 'true'), 
     //||(Logical or/cukup salah satu statement antara 2 garis itu bakal ngasilin true), 
     //!(Logical not/kembalikan dari hasil aslinya)
-
     
-
+    // Example
+    int x = 5;
+    int y = 8;
+    // cout << (y > x && 10 > y); // will make true
+    // cout << (y > x || 8  > y); // will still true because one of them which is y > x is true
+    //    cout << !(y > x && 10 > y); // just reverse the result, and the answer that should be true becomes false
     
+    // Operator presendence (Ini ibaratnya kalo diperhitungan, mana dulu yang di eksekusi, kalo di math kita tahu itu tanda kurung atau kali dan bagi)
+
+    // urutan order of operations - dari highest to lowest priority:
+    // () - Parentheses
+    // *, /, % - Multiplication, Division, Modulus
+    // +, - - Addition, Subtraction
+    // >, <, >=, <= - Comparison
+    // ==, != - Equality
+    // && - Logical AND
+    // || - Logical OR
+    // = - Assignment
+
+    // CODE CHALLENGE
+//     #include <iostream>
+//     using namespace std;
+
+//     int main() {
+//   // Write itemPrice here
+// 	int itemPrice =  20;
+	
+//   // Write shippingCost here
+// 	int shippingCost =  5;
+
+//   // Write sum here (itemPrice + shippingCost)
+// 	int sum= itemPrice + shippingCost;
+
+//   // Print sum here
+// 	cout << sum;
+
+//   return 0;
+// }
+
+// EVALUASI:
+// Bukan make titik dua untuk assign value, tapi memakai '='
+
     return 0;
 }
+    
+
+    
+
+    
