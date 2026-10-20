@@ -65,14 +65,43 @@ int main(){
     // karena string itu membaca dari tanda kutip, jadinya kalau kita memang mau memasukkan kalimat yang ada tanda kutipnya
     // itu memakai spesial karakter berupa \' \' untuk memunculkan ' 
     // \" \" untuk memunculkan "
-    // \\ untuk memunculkan \
+    // \\ untuk memunculkan garis miring "\"
 
     // sama juga ada \n (untuk buat line baruh dibawahnya) dan \t (untuk kasih spacing yang panjang antara kata, sebenernya katak tab)
     
 
     // USER INPUT STRING
     // dibagian sini kita belajar cara masukkin beberapa kata itu ga cukup hanya memakai 'cin' doang, karena nanti yang keambil hanyalah kata awal
-    
+    cout << "Type your full name: ";
+    cin >> fullName; // Bintang Arya Pradipta
+    cout<< "Your full name is: " << fullName; // it'll just make the first word which is 'Bintang'
+
+    // The correct ways to do it is using 'getLine' function
+    cout << "Type your full name: ";
+    getline(cin, fullName); // Bintang Arya Pradipta
+    cout << "Your full name is: " << fullName; // use just a normal '<<'
+
+
+    //Omitting Namespace
+    // disini dikasih tahu sebenernya kita bisa tanpa memakai line 'using namespace std;' di bagian header kode tapi akan lebih ribet
+    //Contoh
+    #include <iostream>
+    #include <string>
+
+    int main();{
+
+        std::string greeting = "Hello World!";
+        cout << greeting; // jadi lebih ribet aja
+        return 0;
+    }
+
+    // C-style String
+    // Ini cara bahasa C untuk mendeclare sebuah string kayak di cpp
+
+    string greeting1 = "Hello";
+    char greeting2[] = "Jello";
+
+    // dan juga untuk menampilkan hasil nya tetep sama memakai 'cout'
 
     return 0;
 }
