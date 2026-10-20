@@ -177,7 +177,74 @@ int main() {
         cout << "If one of condition is true";
     }
 
-    // 
+    // NOT (!)
+    // The NOT operator (!) reverse a condition.
+    // if condition true, ! make it false
+    // if condition false, ! make true
+
+    int a = 33;
+    int b = 44;
+
+     if (!(a > b)) {
+        cout << "a is NOT greater than b";
+     }
+
+    //Real Life Example
+    // For example, to get access to a system, there are specific requirements:
+    // You must be logged in, and then you either need to be an admin, or have a high security clearance (level 1 or 2):
+
+    bool isLoggedIn = true;
+    bool isAdmin = false;
+    int securityLevel = 3; // 1 = highest
+
+    if (isLoggedIn && (isAdmin || securityLevel <= 2)) {
+        cout << "Acces Granted";}
+    else {
+        cout << "Acces denied";
+    }
+
+    // Try changing securityLevel and isAdmin to test different outcomes:
+    // securityLevel 1 = Access granted
+    // securityLevel 2 = Access granted
+    // securityLevel 3 = Access denied
+    // securityLevel 4 = Access denied
+    // If isAdmin = true, access is granted
+
+    // Real-Life Example
+    int myNum = 5;
+
+    if (myNum % 2 == 0) {
+    cout << myNum << " is even.\n";
+    } else {
+    cout << myNum << " is odd.\n";
+    }
+
+    // Check Temperature
+    int temperature = 30; 
+
+    if (temperature < 0) {
+    cout << "It's freezing!\n";
+    } else if (temperature < 20) {
+    cout << "It's cool.\n";
+    } else {
+    cout << "It's warm.\n";
+    }
+
+    // CCODE CHALLENGE
+    #include <iostream>
+    using namespace std;
+
+    int main() {
+    int age = 20;
+
+    if (age >= 18) {
+        cout << "Allowed";
+    } else {
+        cout << "Not allowed";
+    }
+
+    return 0;
+    }
 
     return 0;
 }
