@@ -155,5 +155,29 @@ int main() {
     //You can nest as many if statements as you want, but avoid making the code too deep - it can become hard to read.
     // Nested if is often used together with else and else if for more complex decision making.
 
+    // LOGICAL OPERATIONS
+    //You can combine or reverse conditions using logical operators. 
+    // These work together with if, else, and else if to build more complex decisions.
+
+    // AND (&&)
+    int a = 200;
+    int b = 30;
+    int c = 25;
+
+    if (a > b && c > a) {
+        cout << "Both condition are true";
+    }
+
+    // OR (||)
+    int d = 25;
+    int e = 300;
+    int f = 48;
+
+    if (d > e || f > d) { 
+        cout << "If one of condition is true";
+    }
+
+    // 
+
     return 0;
 }
