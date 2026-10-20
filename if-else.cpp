@@ -92,5 +92,68 @@ int main() {
         cout << "Good Evening";
     }
 
+    // Short Hand If Else (Ternary Operation)
+    // There is also a short-hand if...else, known as the ternary operator because it uses three operands.
+    // The ternary operator returns a value based on a condition: if the condition is true, it returns the first value; 
+    // otherwise, it returns the second value.
+    // It can be used to replace multiple lines of code with a single line, 
+    // and is often used to replace simple if...else statements:
+
+    // Syntax 
+    // kondisi ? hasil_jika_benar : hasil_jika_salah;
+
+    int time = 20;
+    string result =(time < 18) ? "Good Morning!":"Good Evening.";
+    cout << result;
+
+    int waktu = 20;
+    cout << ((time < 18)? "Good day": "Good evening");
+
+    // NESTED TERNARY (UNTUK MEMPERSINGKAT KONFDISI IF-ELSE )
+    int time = 30;
+    string message = (time < 12) ? "Good Morning"
+        : (time < 18)? "Good Afternoon"
+        : "Good Evening";
+    cout << message;
+
+
+    // Nested If
+    // You can also place an if statement inside another if. This is called a nested if statement.
+    // Itu terjadi kalo misalkan kondisi pertama true, maka lanjut ke-if selanjutnya
+
+    int x = 15;
+    int y = 20;
+
+    if (x > 10) {
+        cout << " x is greater than 10\n";
+        // nested if
+        if (y > 5) {
+            cout << "y is greater than 5\n";
+        }
+
+    }
+
+    // Real Life Example
+    int age = 20;
+    bool isCitizen = true;
+
+    if (age >= 18) {
+        cout << "Great! are you a citizen? \n";
+
+        if (isCitizen) {
+            cout << "Great! you allowed to vote?\n";
+        }
+        else {
+            cout << "You can't vote, because you must be a citizen.\n";
+        }
+    }
+    else {
+        cout << "You are not old enough to vote.\n";
+    }
+
+    // NOTE
+    //You can nest as many if statements as you want, but avoid making the code too deep - it can become hard to read.
+    // Nested if is often used together with else and else if for more complex decision making.
+
     return 0;
 }
