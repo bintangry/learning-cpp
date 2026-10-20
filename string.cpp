@@ -71,6 +71,8 @@ int main(){
     
 
     // USER INPUT STRING
+    // dibagian sini kita belajar cara masukkin beberapa kata itu ga cukup hanya memakai 'cin' doang, karena nanti yang keambil hanyalah kata awal
     
+
     return 0;
 }
