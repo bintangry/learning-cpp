@@ -231,20 +231,93 @@ int main() {
     }
 
     // CCODE CHALLENGE
-    #include <iostream>
-    using namespace std;
+    // #include <iostream>
+    // using namespace std;
 
-    int main() {
-    int age = 20;
+    // int main() {
+    // int age = 20;
 
-    if (age >= 18) {
-        cout << "Allowed";
-    } else {
-        cout << "Not allowed";
+    // if (age >= 18) {
+    //     cout << "Allowed";
+    // } else {
+    //     cout << "Not allowed";
+    // }
+
+    
+    // }
+
+    // return 0;
+
+    // SWITCH
+    // use the switch statement to select one of many code block to be executed
+
+    // berarti switch ini gunanya untuk menjalankan suatu program, melihat dari situasi
+
+    // switch(expression) {
+    //     case x:
+    //     // code block
+    //         break;
+    //     case y:
+    //         // code block
+    //         break;
+    //     default:
+
+        //code block
+        // NOTE:
+        // The switch expression is evaluated once
+        // The value of the expression is compared with the values of each case
+        // If there is a match, the associated block of code is executed
+        // The break and default keywords are optional, and will be described later in this chapter
     }
+    
+    // int day = 4;
+    // switch (day) {
+    //     case 1:
+    //         cout << "Monday";
+    //         break;
+    //     case 2:
+    //         cout << "Tuesday";
+    //         break;
+    //     case 3:
+    //         cout << "Wednesday";
+    //         break;
+    //     case 4:
+    //         cout << "Thursday";
+    //         break;
+    //     case 5:
+    //         cout << "Friday";
+    //         break;
+    //     case 6:
+    //         cout << "Saturday";
+    //         break;
+    //     case 7:
+    //         cout << "Sunday";
+    //         break;
+    // }
+    // Outputs "Thursday" (day 4)
 
-    return 0;
-    }
+// KEYWORD    // The Break Keyword
+//     When C++ reaches a break keyword, it breaks out of the switch block.
+// This will stop the execution of more code and case testing inside the block.
+// When a match is found, and the job is done, it's time for a break. There is no need for more testing.
+//  break fungsinya keluar dari switch, supaya kode di case bawahnya ga ikut dijalankan
 
-    return 0;
-}
+// break nggak harus setelah satu output—lu boleh punya beberapa perintah sebelum break. 
+// Program juga tetap lanjut menjalankan kode setelah blok switch.
+
+
+// The default Keyword
+// bagian cadangan kalau nggak ada case yang cocok, mirip seperti else
+//     int day = 4;
+//     switch (day) {
+//     case 6:
+//         cout << "Today is Saturday";
+//         break;
+//     case 7:
+//         cout << "Today is Sunday";
+//         break;
+//     default:
+//         cout << "Looking forward to the Weekend";
+//     }
+//     // Outputs "Looking forward to the Weekend"
+// }
