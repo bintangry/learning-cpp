@@ -38,11 +38,55 @@ int main(){
     do {
         cout << i << "\n";
         i++;
+        // Do not forget to increase the variable used in the condition (i++), otherwise the loop will never end!
 
     } while (i < 5);
 
     // Condition is false from the start
+    // In the example above, the condition i < 5 was true at the beginning,
+    // so the loop executed multiple times. But what if the condition is false right from the start?
+
+    int i = 10;
+    do {
+        cout << "i is" << i << "\n";
+        i++;
+    } while (i < 5);
     
+    // REAL LIFE EXAMPLE
+    int countdown = 3;
+
+    while (countdown > 0) {
+    cout << countdown << "\n";
+    countdown--;
+    }
+
+    cout << "Happy New Year!!\n";
+
+    //In this example, we create a program that only print even numbers between 0 and 10 (inclusive):
+
+    int i = 0;
+
+    while (i <= 10) {
+    cout << i << "\n";
+    i += 2;
+    }
+
+    // In this example we use a while loop to reverse some numbers:
+    // A variable with some specific numbers
+    int numbers = 12345;
+
+    // A variable to store the reversed number
+    int revNumbers = 0;
+
+    // Reverse and reorder the numbers
+    while (numbers) {
+    // Get the last number of 'numbers' and add it to 'revNumbers'
+    revNumbers = revNumbers * 10 + numbers % 10;
+    // Remove the last number of 'numbers'
+    numbers /= 10;
+    }
+
+    cout << "Reversed numbers: " << revNumbers << "\n";
     
     return 0;
 }
