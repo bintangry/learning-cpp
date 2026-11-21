@@ -121,12 +121,28 @@ int main(){
     // Statement 3 increases a value each time the code block in the loop has been executed: i++
 
     // Print Even Numbers
-    for (int = 0; i < 10; i = i + 2) {
+    for (int i = 0; i < 10; i = i + 2) {
         cout << i << "\n";
     }
 
     // nanti nambahnya genap terus
 
-    // sum of numbers
+    // sum of numbers: untuk mengsum 1 sampai 5
+
+    int sum = 0;
+    for (int i = 1; i <= 5; i++) {
+        sum = sum + i;
+    }
+    cout << " Sum is " << sum;
+
+    // Countdown
+    for (int i = 5; i > 0; i--) {
+        cout << i << "\n";
+    }
+
+    
+
+
+
     return 0;
 }
