@@ -25,5 +25,18 @@ int main() {
     // 1 2 3
     // 2 4 6
     // 3 6 9
+
+    // The Foreach Loop
+    // Foreach adalah aturan yang menyuruh komputer untuk mengambil dan melihat 
+    // semua barang di dalam satu kotak satu per satu dari awal sampai habis, tanpa perlu repot menghitung nomor urutnya
+
+    for (type variableName : arrayName) {
+    // code block to be executed
+    }
+
+    int myNumbers[5] = {10, 20, 30, 40, 50};
+        for (int num : myNumbers) {
+  cout << num << "\n";
+}
     return 0;
 }
